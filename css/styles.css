@@ -82,7 +82,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: white;
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -11340,7 +11340,7 @@ p {
 }
 
 .bg-faded {
-  background-color: #f6e1c5;
+  background-color: rgba(82, 34, 56, 0.9);
 }
 
 .btn-xl {
@@ -11387,7 +11387,7 @@ p {
     position: relative;
     z-index: 0;
     width: 100%;
-    height: 700px;
+    height: auto;
   }
   .about-heading .about-heading-content {
     margin-top: -5rem;
