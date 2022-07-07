@@ -8,7 +8,7 @@
         <title>Certified Loner</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="js/font-all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
@@ -45,17 +45,17 @@
                                 <span class="section-heading-upper">Certified Loner Form</span>
                                 <span class="section-heading-lower">Get your certificate</span>
                             </h2>
-                            <form class="">
+                            <form id="cert-form">
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Who is this form for?</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <label class="form-label">Who is this form for?</label>
+                                    <select name="form_owner" class="form-select" aria-label="Default select example">
                                         <option value="someone-else">Someone Else</option>
                                         <option value="myself">Myself</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Type of Loner?</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select name="loner_type" class="form-select" aria-label="Default select example">
                                         <option value="Introverted Loner">Introverted Loner</option>
                                         <option value="Religious Loner">Religious Loner</option>
                                         <option value="Highly Sensitive Loner">Highly Sensitive Loner</option>
@@ -64,13 +64,13 @@
                                     </select>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Name of the Loner</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fullname">
+                                    <label class="form-label">Name of the Loner</label>
+                                    <input name="loner_name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fullname">
                                     <small id="emailHelp" class="form-text text-muted">You can use your nickname, note that it will be shown on the certificate</small>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">When should the certificate expire?</label>
-                                    <input type="text" class="form-control" id="expiry-month" placeholder="Till futher notice">
+                                    <label class="form-label">When should the certificate expire?</label>
+                                    <input name="expiry_month" type="text" class="form-control" id="expiry-month" placeholder="Till futher notice">
                                     <small id="emailHelp" class="form-text text-muted">This will be shown in the certificate</small>
                                 </div> 
                                 <button type="submit" class="btn btn-primary">Generate Certificate</button>
@@ -86,8 +86,11 @@
             <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2022</p></div>
         </footer>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
+
     </body>
 </html>
